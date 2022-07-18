@@ -25,15 +25,20 @@
     "imports": {
         "#Controllers/*": "./src/controllers/*",
         "#Config/*": "./src/config/*",
-        "#Dto/*": "./src/sto/*",
-        "#Routes/*": "./src/Routes/*",
-        "#Schemas/*": "./src/Schemas/*"
+        "#Dto/*": "./src/dto/*",
+        "#Routes/*": "./src/routes/*",
+        "#Schemas/*": "./src/schemas/*",
+        "#Lib/*": "./src/lib/*"
     },
     "lint-staged": {
         "*.js": "eslint --fix",
         "*.{js,md}": "prettier --write"
     },
     "dependencies": {
+        "@sinclair/typebox": "^0.24.20",
+        "ajv": "^8.11.0",
+        "ajv-errors": "^3.0.0",
+        "ajv-formats": "^2.1.1",
         "dotenv": "^16.0.1",
         "express": "^4.18.1",
         "mongoose": "^6.4.4"
